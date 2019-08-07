@@ -4,7 +4,7 @@ var weatherContainer = document.getElementById("weather-box"); //biến div xu�
 var petBtn = document.getElementById("clickandreceive-2");
 var petContainer = document.getElementById("pet-box"); //biến div xuất kết quả
 var pageCounter= 1;  //biến đếm page 
- 
+
 /*===============================================1.  WEATHER ==================================================*/
 weatherBtn.addEventListener("click", function() {
     var ourRequest = new XMLHttpRequest();
@@ -64,7 +64,7 @@ function displayP(data) {
                 content += data[i].foods.likes[y]; 
             }
             else {
-                content+= "&nbsp;and&nbsp;" +data[i].foods.likes[y] 
+                content+= "&nbsp;and&nbsp;" +data[i].foods.likes[y]; 
             }
 
         }
