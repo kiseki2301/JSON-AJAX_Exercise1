@@ -68,7 +68,7 @@ function displayP(data) {
             }
 
         }
-    content += "</p>";
+    content += ".</p>";
 
     }
     petContainer.insertAdjacentHTML("beforeend", content);
