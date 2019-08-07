@@ -1,12 +1,13 @@
-.clickandreceive
+header {display: flex;}
+#clickandreceive-1, #clickandreceive-2
 {
-padding: 20px 30px;
-background-color: #587c0c;
-border: 2px solid #f44336;
+padding: 10px 20px;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+border-top-right-radius: 40px;
+border-bottom-left-radius: 40px;
+color: #FFFFFF;
+cursor: pointer;
 }
 
-.submit > a
-{
-    text-decoration:none;
-
-}
+.hide-me { display: none;}
