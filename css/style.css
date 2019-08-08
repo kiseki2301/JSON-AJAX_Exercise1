@@ -1,4 +1,17 @@
-header {display: flex;}
+.total-container { max-width: 1400px; margin:40px auto 0 auto; }    
+.container {padding: 20px; margin-bottom: 20px; box-sizing: border-box;}
+
+.container:nth-child(1) {background-color:#fff3b3; flex-basis:50%;}
+.container:nth-child(2) {background-color: #f3aeca; flex-basis:40%;}
+header {display: inline-flex;}
+
+@media (min-width: 900px) { /* khi kích thước màn hình nhỏ thì hiện dưới dạng 1 cột, khi kích thước máy tính (từ 900px-1400px) thì hiện dưới dạng 2 cột*/
+    .total-container{ display: flex; justify-content: space-around; }
+}
+
+header {display: flex; justify-content: space-around;} /*canh CSS cho button và h3 ra giữa container*/
+
+
 #clickandreceive-1, #clickandreceive-2
 {
 padding: 10px 20px;
@@ -10,4 +23,4 @@ color: #FFFFFF;
 cursor: pointer;
 }
 
-.hide-me { display: none;}
+.hide-me { visibility: hidden;} 
