@@ -10,7 +10,7 @@ weatherBtn.addEventListener("click", function() {
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET', 'https://kiseki2301.github.io/json-examples/weather.json', 'true');
     ourRequest.onreadystatechange = function () {
-        if(this.readyState==4 & this.status==200) {
+        if(this.readyState==4 && this.status==200) {
             var getdata = JSON.parse(ourRequest.responseText); //chỗ này có thể dùng responseText hoặc response, dùng responText khi data lưu trên server, dùng response khi lưu data local.
             displayW(getdata);
             
